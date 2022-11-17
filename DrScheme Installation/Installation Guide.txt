@@ -1,0 +1,71 @@
+DOWNLOADING AND INSTALLING DrScheme
+
+DOWNLOADING
+1. Go to http://www.plt-scheme.org/.
+2. On the box that tells you "PLT Scheme is now Racket", click the "[close]"
+   box in the top right corner.  (You will be doing this several times.
+   It's annoying, but remember you only need to download this once.)
+3. Click "Download PLT Scheme" on the right side of the web page.
+4. On the box that tells you "PLT Scheme is now Racket", click the "[close]"
+   box in the top right corner.
+5. IMPORTANT: You want v372 of DrScheme! Note that the default is
+   Version 4.2.5.  However, on the right hand side of the web page, there
+   is a link for "Other Versions".  Click the "Other Versions" link.
+6. On the box that tells you "PLT Scheme is now Racket", click the "[close]"
+   box in the top right corner.
+7. Select "v372" from the menu, then click the "Go" button.
+8. On the box that tells you "PLT Scheme is now Racket", click the "[close]"
+   box in the top right corner.
+9. Select the operating system that applies for your computer, then click
+   the "Download" button.
+10. On the box that tells you "PLT Scheme is now Racket", click the "[close]"
+   box in the top right corner.
+11. Choose a location from which to download.  (It doesn't matter which you
+   select.)
+12. Save the file wherever it is convenient.
+
+INSTALLING
+1. Execute the file you downloaded.  On Linux, this is
+   plt-372-bin-i386-linux.sh.  On Windows, it is
+   plt-372-bin-i386-win32.exe.  On the Mac, it is
+   plt-372-bin-i386-osx-mac.dmg.
+2. You will be prompted for where you want to put the PLT Scheme
+   stuff.  On Linux, I recommend creating a directory called
+   /opt/plt and specify that as the location.  On Windows, 
+   I recommend that you choose C:/Program Files/PLT.  (If you
+   want to use a different drive than the C drive, by all means
+   do so; I am just using C in this example.)
+
+That's it!  You can now run Scheme on your computer.  Assuming you
+followed the installation directions to the letter, on Linux, you
+would find the program at /opt/plt/bin/drscheme.  On Windows, look
+in C:/Program Files/PLT/DrScheme.exe.  On the Mac, it will be under
+/Applications/PLT/DrScheme.
+
+RUNNING FOR THE FIRST TIME
+1. When you run DrScheme for the first time, you will be presented
+   a window with "Choose Language" on the title bar.  You do NOT
+   want the default which is "Beginning Student."  What do do want is:
+	PLT --> Graphical (MrEd, includes MzScheme)
+   Select it and click OK.
+2. Click Run at the top right of the DrScheme window.
+   On subsequent uses of DrScheme, this should remain the default.
+
+SIMPLY SCHEME ADDITIONS 
+
+There are files that we will need to run Scheme like the examples in the 
+book.  Complete the following steps:
+
+1) Download and uncompress the folder from the scheme.zip file provided for 
+you (labeled "Scheme Files" in the Welcome folder). 
+
+2) Drag the whole folder into the PLT folder you created (see above)
+
+
+Use (load /Applications/PLT/scheme/simply.scm) command in definitions window
+to run these properly.
+
+For other special Simply Scheme files, replace "simply.scm" with
+whatever filename you wish to load ("functions.scm", "ttt.scm", etc.).
+(These files depend on "simply.scm" being loaded first, so you will
+have multiple load commands in the Definitions window in DrScheme.)

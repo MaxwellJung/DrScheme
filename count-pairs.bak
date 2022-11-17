@@ -1,0 +1,16 @@
+(define x '(a b c))
+(define y x)
+(define z '())
+(set! z x)
+
+(define (count-pairs pair)
+  (let ((visited '()))
+    (define (visited? pair visited)
+      (eq? pair visited))
+    (define (cph pair)
+      (cond ((null? pair) 0)
+            ((not (pair? pair)) 0)
+            ((visited? (car pair) visited) (cph (cdr pair)))
+            (else (set! visited (car pair)) (+ 1 (cph (car pair)) (cph (cdr pair))))))
+    
+    (cph pair)))

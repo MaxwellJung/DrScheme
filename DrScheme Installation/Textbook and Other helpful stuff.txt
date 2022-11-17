@@ -1,0 +1,18 @@
+Textbook:
+http://www.eecs.berkeley.edu/~bh/ss-toc2.html
+
+You always need :
+
+(load "/Applications/PLT/scheme/simply.scm")
+
+ 
+
+For Chapter 2 ONLY (in order to use the function program):
+
+(load "/Applications/PLT/scheme/functions.scm")
+
+ 
+
+For the program that automatically gives you an A in all your classes:
+
+(load "/Applications/PLT/scheme/inyodreams.scm")
